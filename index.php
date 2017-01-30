@@ -5,6 +5,9 @@
  * Date: 21/12/2016
  * Time: 12:06 PM
  */
+$major = 1;
+$minor = 0;
+$patch = 0;
 ?>
 
 <!DOCTYPE html>
@@ -1542,8 +1545,8 @@
       <div class="row">
         <div class="center-block small">
         </div>
-        <p class="lead small margin-bottom">© 2017 Goyoom, Inc. All rights reserved . <a class="decoration-none footer-link smooth-hover" href="https://www.lynda.com/aboutus/otl-privacy.aspx" role="button">Privacy Policy</a></p>
-        <span class="vrc">Version 1.0</span>
+        <p class="lead small margin-bottom">© <?php echo date('Y '); ?>Goyoom, Inc. All rights reserved . <a class="decoration-none footer-link smooth-hover" href="https://www.lynda.com/aboutus/otl-privacy.aspx" role="button">Privacy Policy</a></p>
+        <span class="vrc">Version <?php echo "$major.$minor.$patch" ?></span>
       </div>
     </div>
   </footer>

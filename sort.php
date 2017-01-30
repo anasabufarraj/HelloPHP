@@ -2,8 +2,9 @@
 $characters = ['Arthur Dent',
                'Ford Prefect',
                'Zaphod Beeblebrox',
-               'Marvin',
+               'Marvin', 
                'Slartibartfast'];
+sort($characters); // Sort array alphabetical
 ?>
 <!DOCTYPE html>
 <html lang="en">
