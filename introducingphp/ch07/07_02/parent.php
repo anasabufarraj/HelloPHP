@@ -1,3 +1,7 @@
+<?php
+$site_root = '/HelloPHP/introducingphp/ch07/07_02';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,9 @@
 <body>
 <h1>Including External Files</h1>
 <p>This paragraph is in the original file.</p>
+<?php include_once './includes/para.html'; ?>
 <p>This is also in the original file.</p>
+<?php include_once './includes/para.html'; ?>
+
 </body>
 </html>

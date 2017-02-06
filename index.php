@@ -1545,8 +1545,8 @@ $patch = 0;
       <div class="row">
         <div class="center-block small">
         </div>
-        <p class="lead small margin-bottom">© <?php echo date('Y '); ?>Goyoom, Inc. All rights reserved . <a class="decoration-none footer-link smooth-hover" href="https://www.lynda.com/aboutus/otl-privacy.aspx" role="button">Privacy Policy</a></p>
-        <span class="vrc">Version <?php echo "$major.$minor.$patch" ?></span>
+        <p class="lead small margin-bottom">© <?= date('Y '); ?>Goyoom, Inc. All rights reserved . <a class="decoration-none footer-link smooth-hover" href="https://www.lynda.com/aboutus/otl-privacy.aspx" role="button">Privacy Policy</a></p>
+        <span class="vrc">Version <?= "$major.$minor.$patch" ?></span>
       </div>
     </div>
   </footer>

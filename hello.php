@@ -302,3 +302,19 @@ echo '<br>' . '<br>';
 for ($i = 0; ($var % 2) && $i < 16; $i++) :
 	echo $i . '<br>';
 endfor;
+
+echo '<br><br>';
+
+echo 'Something<br>';
+echo 'Something<br>';
+
+$key = 'email';
+$$key = 'john@gmail.com';
+
+echo $email;
+
+echo '<br><br>';
+
+$str = "O'raily";
+echo 'value = "'. htmlentities($str) . '"';
+

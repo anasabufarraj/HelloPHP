@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Get and post</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <title>Get and post</title>
+  <link href="./css/styles_contact.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <h1>Contact Us</h1>
-  <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
+  <form method="get" action="<?= $_SERVER['PHP_SELF']; ?>">
     <p>
       <label for="name">Name:</label>
       <input type="text" name="name" id="name">
@@ -28,11 +28,11 @@
   <pre>
       <?php
       if ($_GET) {
-          echo 'Content of the $_GET array:<br>';
-          print_r($_GET);
+        echo 'Content of the $_GET array:<br>';
+        print_r($_GET);
       } elseif ($_POST) {
-          echo 'Content of the $_POST array:<br>';
-          print_r($_POST);
+        echo 'Content of the $_POST array:<br>';
+        print_r($_POST);
       }
       ?>
   </pre>
