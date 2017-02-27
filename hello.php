@@ -317,4 +317,39 @@ echo '<br><br>';
 
 $str = "O'raily";
 echo 'value = "'. htmlentities($str) . '"';
+echo '<br><br>';
+
+// 1. Establish Connection
+$connection = mysqli_connect("localhost", "root", "root", "wordpress");
+// Test if connection succeed
+if(mysqli_connect_errno()) {
+	exit("Connection failed: " .
+	    mysqli_connect_error() .
+	    " (" . mysqli_connect_errno() . ")"
+	);
+}
+
+// 2. Make queries
+$query  = "SELECT * ";
+$query .= "FROM wp_users ";
+$query .= "WHERE Visible = 1 ";
+$query .= "ORDER BY Name ASC";
+$result = mysqli_query($connection, $query);
+// Test if reading succeed
+if(!$result) {
+	exit("Connection failed.");
+}
+
+// 3. Use returned data (if any)
+while ($row = mysqli_fetch_row($result)) {
+	// output data from each roe
+	var_dump($row);
+	echo "<hr>";
+}
+
+// 4. Release the returned data (free up memory):
+mysqli_free_result($result);
+
+// 5. Closing connection
+mysqli_close($connection);
 

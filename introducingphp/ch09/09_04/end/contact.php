@@ -7,6 +7,7 @@ if (isset($_POST['send'])) {
     require './includes/process_mail.php';
 }
 ?>
+?>
 <!doctype html>
 <html lang="en">
 <head>
